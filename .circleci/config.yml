@@ -8,6 +8,10 @@ jobs:
     executor: ci-executor
     steps:
       - checkout
+      
+      - run:
+          name: update github pages
+          command: bundle update github-pages
 
       - run:
           name: build dependencies
