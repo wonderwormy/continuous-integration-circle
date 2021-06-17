@@ -8,10 +8,6 @@ jobs:
     executor: ci-executor
     steps:
       - checkout
-      
-      - run: 
-          name: update bundler
-          command: bundle update --bundler
 
       - run:
           name: build dependencies
